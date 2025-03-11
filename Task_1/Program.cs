@@ -326,7 +326,7 @@ namespace Task
                 foreach (char item in value.ToCharArray())
                 {   
                     foreach(char cont in control){
-                        if (item == cont){
+                        if (cont== item){
                             vowel ++; 
                         }
                     }
@@ -368,7 +368,6 @@ namespace Task
             {
                     var input = intInput.Retrun();
                     int num = input.num[0];
-                    double value = 0; 
                     if((num >=10) &&(num<=20)){
                         Console.WriteLine( $"Ingreso:{num} => Resultado: Está en el rango");        
                     }
@@ -410,7 +409,6 @@ namespace Task
                                 "Vocales","Factorial",
                                 "Margen de valor"};  
             Console.ForegroundColor= ConsoleColor.Yellow;
-            int cantidad = (lista.Length/2 );
             Console.WriteLine("""********************************""");
             for(int i = 0;i< lista.Length ; i+=2){
                for(int e = 0;e< 2; e++){
