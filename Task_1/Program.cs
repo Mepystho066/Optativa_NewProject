@@ -361,7 +361,7 @@ namespace Task
         public void Run(){
             IntInput intInput = new IntInput();
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("Factorial");
+            Console.WriteLine("Margen de valor");
             bool whileControl = true ;
 
             while (whileControl)
@@ -379,22 +379,67 @@ namespace Task
             }
         }
     }
+
+
+// Numero elevado al cuadrado
+// Doble o triple
+// Raiz o cuadrado
+// Perimetro del circulo
+// Dias laborables : Rango de 1 a 7
+// Impuesto de sueldo
+// Buscador de Restos
+// Numeros pares
+// Diferencia factores
+// Longitud de palabra
+// Promedio
+// Promedio
+// Vocales
+// Factorial
+// Margen de valor
+
+
+
+    class InfoData(){
+        public void Run(){
+            string [] lista = {"salir","Numero elevado al cuadrado",
+                                "Doble o triple","Raiz o cuadrado",
+                                "Perimetro del circulo","Dias laborables : Rango de 1 a 7",
+                                "Impuesto de sueldo","Buscador de Restos","Numeros pares",
+                                "Diferencia factores","Longitud de palabra",
+                                "Promedio","Promedio",
+                                "Vocales","Factorial",
+                                "Margen de valor"};  
+            Console.ForegroundColor= ConsoleColor.Yellow;
+            int cantidad = (lista.Length/2 );
+            Console.WriteLine("""********************************""");
+            for(int i = 0;i< lista.Length ; i+=2){
+               for(int e = 0;e< 2; e++){
+                Console.ForegroundColor= ConsoleColor.Blue;
+                Console.Write($"|{lista[i+e]} = {i+e}");
+               }
+               Console.WriteLine("|");
+            }
+            Console.ForegroundColor= ConsoleColor.Yellow;
+            Console.WriteLine("""********************************""");
+            Console.ForegroundColor= ConsoleColor.Red;
+            Console.WriteLine("Para salir de cada ejercicio envia la letra q");
+        }
+    }
     class Program
     {
         static void Main(string[] args)
         {
             IntInput intInput = new IntInput();
-    
+            InfoData infoData = new InfoData();
+            infoData.Run();
             bool control = true;
             while (control)
             {
-                Console.ForegroundColor= ConsoleColor.Yellow;
+                Console.ForegroundColor= ConsoleColor.Magenta;
                 Console.WriteLine("Selecciona un tipo");
                 var input = intInput.Retrun();
                 int value = input.num[0];
-                //if(true) 
-                //    Console.WriteLine("No es un valor correcto");
-            
+        
                 switch (value)
                 {
                     
@@ -465,10 +510,7 @@ namespace Task
                         Console.WriteLine("Error en la entrada ");
                         break;
                 }
-            
             }
-
         }
-
     }
 
