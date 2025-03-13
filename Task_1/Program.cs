@@ -44,7 +44,6 @@ namespace Task
                 Console.Write($"Error Entrada de datos incorrecta");
                 throw;
             }
-            
         }
     }
     class PositivePower
@@ -66,7 +65,6 @@ namespace Task
                 }
             }
     }
-
     class DoubleOrTriple
     {
         public void Run()
@@ -88,8 +86,7 @@ namespace Task
                             Console.WriteLine($"Ingreso:{num},{num2} => Resultado: {num2*3}");
                         }  
                         whileControl = input.exitControl;
-                } 
-                 
+                }         
         }
     }
     class RootOrSquare
@@ -379,7 +376,6 @@ namespace Task
         }
     }
 
-
 // Numero elevado al cuadrado
 // Doble o triple
 // Raiz o cuadrado
@@ -395,8 +391,6 @@ namespace Task
 // Vocales
 // Factorial
 // Margen de valor
-
-
 
     class InfoData(){
         public void Run(){
